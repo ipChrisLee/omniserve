@@ -59,7 +59,7 @@ conda create -n OmniServe python=3.10 -y
 conda activate OmniServe
 pip install --upgrade pip  # enable PEP 660 support
 
-conda install -c nvidia cuda-toolkit -y  # This is optional if you prefer to use built-in nvcc
+conda install -c nvidia cuda-toolkit=12 -y  # This is optional if you prefer to use built-in nvcc
 
 # Install OmniServe package
 pip install -e .
